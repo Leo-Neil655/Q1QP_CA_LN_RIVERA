@@ -1,0 +1,413 @@
+@font-face {
+    font-family: Heavitas;
+    src: url(Fonts/Heavitas.otf);
+}
+@font-face {
+    font-family: Simple Summer;
+    src: url(Fonts/Simple\ Summer.otf);
+}
+@font-face {
+    font-family: GothamBook;
+    src: url(Fonts/GothamBook.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Navbar Start*/
+.navbar { 
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100vw;
+   height: 6vh;
+   padding: 0.75vw;
+   text-align: center;
+   background-color: #6A9FC6;
+   opacity: 1.0;
+}
+
+
+/*To place logo and links in navbar*/
+.logo, .links {
+   display: inline-block;
+}
+
+
+.logo {
+   float: left;
+   object-fit: cover;
+}
+
+
+#Logo {
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 0.5vw solid #4B3E9F;
+}
+
+
+.links {
+    text-decoration: none;
+    float: left;
+    font-size: 2vw;
+}
+
+
+/*Equal spacing for access to other pages*/
+.links a {
+    margin: auto;
+    margin-left: 5.0vw;
+    margin-right: 5.0vw;
+    text-decoration: none;
+    color: white;
+    font-family: 'Heavitas', sans-serif;
+}
+
+/*Navbar End*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 6vh;
+    padding: 0.75vw;
+    text-align: center;
+    background-color: #AA87C6;
+    opacity: 1.0;
+}
+
+
+/*Specified content to be in footer*/
+.copyright, .socials {
+    display: inline-block;
+}
+
+
+.copyright {
+    float: left;
+    font-size: 2vw;
+    color: white;
+    font-family: 'Heavitas', sans-serif;
+}
+
+
+.socials {
+    float: right;
+    object-fit: cover;
+}
+
+
+/*Socials nearest the end of page only*/
+#Socials {
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 0.5vw solid #4B3E9F;
+    margin-left: 0.75vw;
+    margin-right: 0.25vw;
+}
+
+
+#Socialsa {
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 0.5vw solid #4B3E9F;
+    margin-left: 0.75vw;
+    margin-right: 1.5vw;
+}
+
+/*Footer End*/
+
+
+body{
+margin: 0;
+}
+
+
+.body{
+    background-image: url(Images/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+/*Body Items Start*/
+
+
+.headert { /*Index and Study Background box tile, sets border*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    position: center;
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+
+.headertxtt { /*Title or Header text*/
+    text-align: center;
+    font-family: 'Simple\ Summer', serif;
+    color: #1366E7;
+    font-size: 2.5vw;
+    position:relative;
+    margin-top: 2vh;
+    word-spacing: 1.25w;
+}
+
+
+.headertxtt span { /*For other color like wireframe*/
+    color: #6D5AE8;
+}
+
+
+.hdrntext1 { /*Subtitle text 1 for boxes*/
+    color: #9687FF;
+    text-align: center;
+    position:relative;
+    margin-top: 2%;
+    font-family: 'GothamBook', sans-serif;
+    font-size: 1.75vw;
+}
+
+
+.hdrntext2 { /*Subtitle text 2 for boxes*/
+    color: #9687FF;
+    text-align: center;
+    position:relative;
+    margin-top: 8%;
+    font-family: 'GothamBook', sans-serif;
+    font-size: 1.6vw;
+}
+
+
+.hdrntext3 { /*Subtitle text 3 for boxes in references and study background*/
+    color: #9687FF;
+    position: center;
+    text-align: justify;
+    margin-top: 0.1%;
+    font-family: 'GothamBook', sans-serif;
+    font-size: 1.5vw;;
+}
+
+
+.headerts { /*Flexbox application for About Us, Study Background, Index*/
+    background-color: transparent;
+    position: center;
+    width: 100%;
+    height: 24vh;
+    margin-top: 2vh;
+    margin-bottom: 13.45vh;
+}
+
+
+.headerts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+    
+
+.headerts1 { /*Flexbox application for  About Us Pictures*/
+    background-color: transparent;
+    position: center;
+    width: 100%;
+    height: 29vh;
+    margin-top: 1.5vh;
+}
+
+
+.headerts1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headerts2 { /*Flexbox application for Content Images */
+    background-color: transparent;
+    width: 99%;
+    height: 28vh;
+    margin-top: 11.5vh;
+}
+
+
+.headerts2 {
+    display: flex;
+     justify-content: space-around;
+    align-items: center;
+}
+
+        
+.headert1 { /*Boxes for text in Index or Home*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    width: 45%;
+    max-height: 20vh;
+    position: left;
+}
+
+
+ .headert1, .headert2 p{ /*Text Modifier*/
+    font-size: 1.5vw;
+    font-family: 'GothamBook', sans-serif;
+    color: #9687FF;
+    text-align: justify;
+    padding-inline-start: 1%;
+    padding-inline-end: 1%;
+}
+
+
+.headert2 { /*Boxes for text in Index or Home*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    width: 45%;
+    max-height: 20vh;
+    position: right;
+}
+
+
+.headert3 { /*Boxes for images in Study background*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    width: 20vh;
+    height: 20vh;
+}
+
+
+.headert3 img {
+    width: 20vh;
+    height: 20vh;
+    object-fit: contain;
+}
+
+
+.headert4 { /*Boxes for images in About Us*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    width: 28vh;
+    height: 28vh;
+}
+
+
+.headert4 img { 
+    width: 28vh;
+    height: 28vh;
+    object-fit: contain;
+}
+
+
+.headertref { /*Reference box tile, sets border*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    position: center;
+    width: 80%;
+    height: 63vh;
+    margin: auto;
+    margin-top: 15vh;
+}
+ 
+
+.headertau { /*Flexbox application for About Us Images */
+    background-color: transparent;
+    position: center;
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    margin-top: 15vh;
+ }
+
+
+.headert5 { /*Boxes for text in About Us*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    width: 45vh;
+    height: 20vh;
+}
+
+
+
+.headert3c { /* SQUARE Boxes for images in Content*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    width: 28vh;
+    height: 28vh;
+}
+
+
+.headert3c img {
+    width: 28vh;
+    height: 28vh;
+    object-fit: contain;
+}
+
+
+.headert5c { /* RECTANGLE Boxes for images in Content*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    width: 45vh;
+    height: 28vh;
+}
+
+
+.headert5c img {
+    width: 45vh;
+    height: 28vh;
+    object-fit: contain;
+}
+
+
+.headertc { /*Flexbox application for Content Explanation boxes */
+    background-color: transparent;
+    position: center;
+    width: 98%;
+    height: 45vh;
+    margin: auto;
+    margin-top: 3vh;
+}
+
+
+.headertc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headert3ct { /*Box for Qualitative Variables explanations in Content*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    width: 37vw;
+    height: 40vh;
+}
+
+
+.headert3ctb { /*Quantitative Variables explanations and overall Summary in Content*/
+    background-color: transparent;
+    border: 0.75vw solid #9687FF;
+    width: 55vw;
+    height: 40vh;
+}
+
+
+.headert5, .headert3ct p{ /*Text Modifiers for stated boxes*/
+    font-size: 1.35vw;
+    font-family: 'GothamBook', sans-serif;
+    color: #9687FF;
+    text-align: center;
+    padding-inline-start: 1%;
+    padding-inline-end: 1%;
+}
+
+
+.headert3ctb {
+    font-size: 1.35vw; /*Text Modifier for stated box*/
+    font-family: 'GothamBook', sans-serif;
+    color: #9687FF;
+    text-align: justify;
+    padding-inline-start: 1%;
+    padding-inline-end: 1%;
+}
